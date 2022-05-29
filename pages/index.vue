@@ -13,5 +13,17 @@
       </template>
     </Suspense>
     <InputEntry />
+    <div class="flex justify-center">
+      <div class="m-4">
+        <BaseCard>
+          <h3>Retro</h3>
+        </BaseCard>
+      </div>
+      <div class="m-4">
+        <BaseCard>
+          <h3>SprintPlanning</h3>
+        </BaseCard>
+      </div>
+    </div>
   </div>
 </template>

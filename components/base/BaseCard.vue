@@ -1,0 +1,23 @@
+<template>
+  <div
+      class="
+       flex
+       flex-col
+       p-4
+       rounded-md
+       shadow-md
+       text-white
+       border-2
+       border-indigo-600
+       hover:bg-indigo-700
+       focus:outline-none
+       focus:ring-2
+       focus:ring-offset-2
+       focus:ring-indigo-500
+       min-w-[320px]
+       max-w-xl
+    "
+  >
+    <slot />
+  </div>
+</template>
