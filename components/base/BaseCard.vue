@@ -6,10 +6,9 @@
        p-4
        rounded-md
        shadow-md
-       text-white
        border-2
        border-indigo-600
-       hover:bg-indigo-700
+       hover:border-indigo-700
        focus:outline-none
        focus:ring-2
        focus:ring-offset-2
