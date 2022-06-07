@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <Head>
+      <Title>Retro</Title>
+    </Head>
+    <div>
+      <h1>Retro</h1>
+    </div>
+  </div>
+</template>

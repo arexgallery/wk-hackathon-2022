@@ -1,10 +1,14 @@
 <script setup lang="ts">
-const name = ref('')
-const router = useRouter()
-const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
+interface Props {
+  placeholder: string
+  handleSubmit: (team: string) => void
 }
+const props = withDefaults(defineProps<Props>(), {
+  placeholder: '',
+  handleSubmit: () => {},
+})
+
+const name = ref('')
 </script>
 
 <template>
@@ -13,16 +17,16 @@ const go = () => {
       id="input"
       v-model="name"
       class="text-center"
-      placeholder="What's your name?"
+      :placeholder="placeholder"
       type="text"
       autocomplete="false"
-      @keydown.enter="go"
+      @keydown.enter="() => handleSubmit(name)"
     />
     <div>
       <BaseButton
         class="disabled:cursor-not-allowed"
         :disabled="!name"
-        @click="go"
+        @click="() => handleSubmit(name)"
       >
         GO
       </BaseButton>
